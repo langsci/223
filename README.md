@@ -1,4 +1,4 @@
-# Grammatical gender and linguistic complexity
+# Grammatical gender and linguistic complexity I: General issues and areal and language-specific studies 
 
 ## Publication Info
 
