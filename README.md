@@ -16,7 +16,7 @@ not yet available
 
 ## URL
 
-[Book page on langsci-press.org](http://langsci-press.org/catalog/book/237)
+[Book page on langsci-press.org](http://langsci-press.org/catalog/book/223)
 
 
 ## License
