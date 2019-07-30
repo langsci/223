@@ -1,11 +1,11 @@
-# Grammatical gender and linguistic complexity I: General issues and areal and language-specific studies 
+# Grammatical gender and linguistic complexity I: General issues and specific studies 
 
 ## Publication Info
 
 - Editors: Di Garbo, Francesca, Bruno Olsson & Bernhard Wälchli
 - Publication Date: not yet published
 - Series: Studies in Diversity Linguistics  
-- Volume: 
+- Volume:
 
 ## Requirements
 This book requires [Doulos SIL](https://software.sil.org/doulos/) to be installed as a user or system font on the compiling machine.
