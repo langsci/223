@@ -879,11 +879,41 @@ In the sample of this study, sex-based
 
 \begin{figure}
 \includegraphics[width=.8\textwidth]{figures/09/fig7.png}
+%             New Guinea	Africa	The World
+% Sex-based	19	48	84
+% Non-sex-based	1	36	28 
+      \begin{tikzpicture}
+        \begin{axis}[
+        width  = .75\textwidth,
+	height = .3\textheight,  
+        ybar stacked,
+        ymajorgrids, tick align=inside,
+        enlarge x limits=0.15,
+        bar width = 1cm, 
+        ymax = 100,
+        ymin = 0,
+        ylabel={\%}, 
+        symbolic x coords={New Guinea, Africa, World},
+        xtick=data,
+        axis y line*=left,
+        axis x line*=none,
+        legend style={at={(1,0)},
+          anchor=south west,
+          legend columns=1,
+          reverse legend
+          },
+%         x tick label style={rotate=45,anchor=east},
+        ]
+          \addplot+[lsDarkGreenOne] plot coordinates {(New Guinea,95) (Africa,57) (World,75)} ;
+          \addplot+[lsMidGreen] plot coordinates {(New Guinea,5) (Africa,43) (World,25)};
+          \legend{Sex-based, Non-sex-based}
+        \end{axis}
+    \end{tikzpicture} 
 \caption{Sex-based and non-sex-based systems in New Guinea, Africa and the world}
 \label{fig:Svard:7}
-% Sex-based or non-sex-based	New Guinea	Africa	The World
-% Sex-based	19	48	84
-% Non-sex-based	1	36	28
+
+
+
 
 \end{figure}
 
@@ -904,11 +934,39 @@ In the sample of this study, eleven languages (55\%) have only two genders, thre
 \caption{Number of genders in New Guinea, Africa and the world}
 \label{fig:Svard:8}
 % Number of genders	New Guinea	Africa	The World
-% Two	11	42	50
-% Three	3	7	26
-% Four	1	1	12
+% Two	        11	42	50
+% Three	        3	7	26
+% Four	        1	1	12
 % Five or more	5	34	24
-
+      \begin{tikzpicture}
+        \begin{axis}[
+        width  = .75\textwidth,
+	height = .3\textheight,  
+        ybar stacked,
+        ymajorgrids, tick align=inside,
+        enlarge x limits=0.15,
+        bar width = 1cm, 
+        ymax = 100,
+        ymin = 0,
+        ylabel={\%}, 
+        symbolic x coords={New Guinea, Africa, World},
+        xtick=data,
+        axis y line*=left,
+        axis x line*=none,
+        legend style={at={(1,0)},
+          anchor=south west,
+          legend columns=1,
+          reverse legend
+          },
+%         x tick label style={rotate=45,anchor=east},
+        ]
+          \addplot+[lsDarkGreenTwo] plot coordinates {(New Guinea,55) (Africa,50) (World,44.6)} ;
+          \addplot+[lsDarkGreenOne] plot coordinates {(New Guinea,15) (Africa,8.33) (World,23.2)};
+          \addplot+[lsMidGreen] plot coordinates {(New Guinea,5) (Africa,1.2) (World,10.7)};
+          \addplot+[lsLightGreen] plot coordinates {(New Guinea,25) (Africa,40.5) (World,21.4)};
+          \legend{Two, Three, Four, Five or more}
+        \end{axis}
+    \end{tikzpicture} 
 \end{figure}
 
 The distributions in all three samples are similar to a large extent, with two-gender systems being present in around half of the languages. In Africa, large systems are much more common than in New Guinea or the world as a whole. However, this may once again be because of the sample. As mentioned before, 31\% of the languages present in Di Garbo's (\citeyear{DiGarbo2014}) sample are \ili{Bantu} languages, all of which have very large gender systems. In the sample of this study, however, the rather large \ili{Torricelli} and \ili{Lower Sepik-Ramu} families, which according to \citet[372]{Foley2000} have large systems, are represented only by \ili{Bukiyip} and \ili{Yimas} respectively (i.e., 10\% of the sample). It is thus very probable that the similarities between the distribution numbers of genders in New Guinea and Africa actually are greater than indicated here.
@@ -924,12 +982,39 @@ In the sample of this study, 16 languages (80\%) exhibit semantic gender assignm
 
 \begin{figure}
 \includegraphics[width=.8\textwidth]{figures/09/fig9.png}
+% Gender assignment	New Guinea	Africa	The World
+% Semantic	       16	6	53
+% Semantic and formal	4	76	59
+      \begin{tikzpicture}
+        \begin{axis}[
+        width  = .75\textwidth,
+	height = .3\textheight,  
+        ybar stacked,
+        ymajorgrids, tick align=inside,
+        enlarge x limits=0.15,
+        bar width = 1cm, 
+        ymax = 100,
+        ymin = 0,
+        ylabel={\%}, 
+        symbolic x coords={New Guinea, Africa, World},
+        xtick=data,
+        axis y line*=left,
+        axis x line*=none,
+        legend style={at={(1,0)},
+          anchor=south west,
+          legend columns=1,
+          reverse legend
+          },
+%         x tick label style={rotate=45,anchor=east},
+        ]
+          \addplot+[lsDarkGreenOne] plot coordinates {(New Guinea,80) (Africa,7.3) (World,47.3)} ;
+          \addplot+[lsMidGreen] plot coordinates {(New Guinea,20) (Africa,92.7) (World,52.7)};
+          \legend{semantic,semantic and formal}
+        \end{axis}
+    \end{tikzpicture} 
 \caption{Gender assignment in New Guinea, Africa and the world}
 \label{fig:Svard:9}
 
-% Gender assignment	New Guinea	Africa	The World
-% Semantic	16	6	53
-% Semantic and formal	4	76	59
 
 \end{figure}
 
@@ -947,16 +1032,46 @@ In the sample of this study, four languages (20\%) have only one gender-indexing
 
 
 \begin{figure}
-\includegraphics[width=.8\textwidth]{figures/09/fig10.png}
 \caption{Number of gender-indexing targets in New Guinea vs.\ Africa}
 \label{fig:Svard:10}
-
+\includegraphics[width=.8\textwidth]{figures/09/fig10.png}
 % Number of gender-indexing targets	New Guinea	Africa
-% One	4	5
-% Two	4	16
-% Three	2	28
+% One	        4	5
+% Two	        4	16
+% Three	        2	28
 % Four or more	10	33
 % No data	0	2
+
+      \begin{tikzpicture}
+        \begin{axis}[
+        width  = .75\textwidth,
+	height = .3\textheight,  
+        ybar stacked,
+        ymajorgrids, tick align=inside,
+        enlarge x limits=0.15,
+        bar width = 1cm, 
+        ymax = 100,
+        ymin = 0,
+        ylabel={\%}, 
+        symbolic x coords={New Guinea, Africa, World},
+        xtick=data,
+        axis y line*=left,
+        axis x line*=none,
+        legend style={at={(1,0)},
+          anchor=south west,
+          legend columns=1,
+          reverse legend
+          },
+%         x tick label style={rotate=45,anchor=east},
+        ]
+          \addplot+[lsDarkGreenTwo] plot coordinates {(New Guinea,20) (Africa,6) } ;
+          \addplot+[lsDarkGreenOne] plot coordinates {(New Guinea,20) (Africa,19) } ;
+          \addplot+[lsMidGreen] plot coordinates {(New Guinea,10) (Africa,33.3) };
+          \addplot+[lsLightGreen] plot coordinates {(New Guinea,50) (Africa,39.3) };
+          \addplot+[lsLightWine] plot coordinates {(New Guinea,0) (Africa,2.4) };
+          \legend{One, Two, Three, Four or more, No data}
+        \end{axis}
+    \end{tikzpicture} 
 
 \end{figure}
 
@@ -968,13 +1083,39 @@ In the sample of this study, three languages (15\%) have overt gender marking, w
 
 
 \begin{figure}
-\includegraphics[width=.8\textwidth]{figures/09/fig11.png}
 \caption{Occurrence of gender marking on nouns in New Guinea vs.\ Africa}
 \label{fig:Svard:11}
+\includegraphics[width=.8\textwidth]{figures/09/fig11.png}
 % Occurrence of gender-marking	New Guinea	Africa
 % Yes	3	69
 % No	17	15
-
+      \begin{tikzpicture}
+        \begin{axis}[
+        width  = .75\textwidth,
+	height = .3\textheight,  
+        ybar stacked,
+        ymajorgrids, tick align=inside,
+        enlarge x limits=0.15,
+        bar width = 1cm, 
+        ymax = 100,
+        ymin = 0,
+        ylabel={\%}, 
+        symbolic x coords={New Guinea, Africa, World},
+        xtick=data,
+        axis y line*=left,
+        axis x line*=none,
+        legend style={at={(1,0)},
+          anchor=south west,
+          legend columns=1,
+          reverse legend
+          },
+%         x tick label style={rotate=45,anchor=east},
+        ] 
+          \addplot+[lsMidGreen] plot coordinates {(New Guinea,15) (Africa,82.1) };
+          \addplot+[lsDarkWine] plot coordinates {(New Guinea,85) (Africa,17.9) }; 
+          \legend{Yes, No}
+        \end{axis}
+    \end{tikzpicture} 
 \end{figure}
 
 As the figure shows, there is a major disparity between the presence of gender marking on nouns in New Guinea and Africa. In New Guinea, overt gender marking is rare and occurs in only three languages in the sample, whereas in Africa it occurs in the vast majority of languages.
