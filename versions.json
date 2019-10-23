@@ -1,7 +1,1 @@
-{"versions": [{"versiontype": "proofreading",
-		"title": "Grammatical gender and linguistic complexity, Volume 1",
-		"authors": [{"name": "Francesca Di Garbo"},{"name": "Bruno Olsson"},{"name": "Bernhard Wälchli"}],
-	"license": "CC-BY-4.0",
-	"publishedAt": "2019-04-01T10:45:00.000Z"}
-	]
-}
+{"versions": [{"authors": [{"name": "Francesca Di Garbo"}, {"name": "Bruno Olsson"}, {"name": "Bernhard W\u00e4lchli"}], "title": "Grammatical gender and linguistic complexity, Volume 1", "publishedAt": "2019-04-01T10:45:00.000Z", "license": "CC-BY-4.0", "versiontype": "proofreading"}, {"title": "Grammatical gender and linguistic complexity, Volume 1", "versiontype": "first_edition", "license": "CC-BY-4.0", "publishedAt": "2019-10-23T21:01:06.219149", "authors": [{"name": "Francesca Di Garbo"}, {"name": "Bruno Olsson"}, {"name": "Bernhard W\u00e4lchli"}]}]}
